@@ -16,7 +16,7 @@ jobs:
       - name: Push to ACR
         run: |
           az acr login -n labdeployacrdidskar
-          docker tag myapp:latest labdeployacr.azurecr.io/myapp:latest
+          docker tag myapp:latest labdeployacrdidskar.azurecr.io/myapp:latest
           docker push labdeployacr.azurecr.io/myapp:latest
       - name: Deploy to WebApp
         run: |
