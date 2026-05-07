@@ -23,7 +23,7 @@ jobs:
           az webapp config container set \
           -g RGLabDeploy-Didskar \
           -n labdeploy-webapp-Didskar \
-          --container-image-name labdeployacr.azurecr.io/myapp:latest \
-          --container-registry-url https://labdeployacr.azurecr.io \
+          --container-image-name labdeployacrdidskar.azurecr.io/myapp:latest \
+          --container-registry-url https://labdeployacrdidskar.azurecr.io \
           --container-registry-user ${{secrets.ACR_USER}} \
           --container-registry-password ${{secrets.ACR_PWD}}
